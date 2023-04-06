@@ -2,9 +2,8 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 
-var currentDayz = $("currentDay");
-currentDayz.textContent= getDate();
-console.log(Date.now())
+var currentDayz = $("#currentDay");
+currentDayz.text(dayjs().format('ddd,MMM D'));
 
 $(function () {
   $("button").click(function(){
