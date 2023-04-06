@@ -4,16 +4,16 @@
 
 var currentDayz = $("#currentDay");
 currentDayz.text(dayjs().format('ddd,MMM D'));
-
 var currentHour= dayjs().format('H')
 
 $(function () {
   $("button").click(function(){
     var id = $(this).parent().attr('id')
     localStorage.setItem(id, $(this).siblings("textarea").val())
-    $(this).siblings("textarea").val()
+    
   })
-
+  var cat= localStorage.getItem($(hour-12).id);
+  console.log(cat)
  
   // index the variable to only have the first hour of the variable
   // if statement to color the boxes if its less than or more than the variable
