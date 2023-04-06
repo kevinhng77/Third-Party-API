@@ -5,14 +5,16 @@
 var currentDayz = $("#currentDay");
 currentDayz.text(dayjs().format('ddd,MMM D'));
 
+var currentHour= dayjs().format('H')
+
 $(function () {
   $("button").click(function(){
     var id = $(this).parent().attr('id')
     localStorage.setItem(id, $(this).siblings("textarea").val())
+    $(this).siblings("textarea").val()
   })
 
-  // create selector for currentday
-  //create function to gather the time using jquery, set it to the variable, display the text
+ 
   // index the variable to only have the first hour of the variable
   // if statement to color the boxes if its less than or more than the variable
   // local storage linked to save button
@@ -34,8 +36,8 @@ $(function () {
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
-  //
-  // TODO: Add code to display the current date in the header of the page.
 });
 
-
+var allDivs = $("#container-lg px-5");
+console.log(allDivs);
+// for (let i = 0; i < 5; i++)
