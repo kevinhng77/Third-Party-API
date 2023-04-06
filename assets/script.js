@@ -7,9 +7,9 @@ currentDayz.textContent= getDate();
 console.log(Date.now())
 
 $(function () {
-  var id = $(this).attr('id')
   $("button").click(function(){
-    localStorage.setItem(id,$('#textarea').val())
+    var id = $(this).parent().attr('id')
+    localStorage.setItem(id, $(this).siblings("textarea").val())
   })
 
   // create selector for currentday
