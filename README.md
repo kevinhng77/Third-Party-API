@@ -12,6 +12,10 @@ This is a project that mainly involves Javascript but a little bit of HTML. In t
 
 First, by cloning the repository down to your computer, you can copy down the existing index.html file. Next, open it up with GitBash and type in "code ." , which should open up VSCode. From there, there were a lot of errors and things that needed to be fixed, which will be went over in the next section.
 
+## Usage 
+
+Looking at the top of the page, you can see that you are immediately greeted with a big "Work Day Scheduler" heading, which is really big size and easy for the user to read. Looking below that, you can see that there's a description and displays the time. This is possible using the Day Js application, an alternative to Javascript. This is built on top of Javascript to make things easier. 
+
 [Example 1](./assets/image1.png)
 
 Second, by scrolling down to the bottom of the page, you can see that there is an area for you to write text in. On top of that, there is a button on the right of that with the save icon, indicating that you can save things on there. Once you press save, it will save on the page. After a refresh, you can see that it also still saves on the page. This is because of the local storage saving that occurs.
@@ -21,10 +25,6 @@ Second, by scrolling down to the bottom of the page, you can see that there is a
 Furthermore, if you were to notice carefully on the page, you can see that it is color coded.
 
 [Example 3](./assets/image3.png)
-
-## Usage 
-
-Looking at the top of the page, you can see that you are immediately greeted with a big "Work Day Scheduler" heading, which is really big size and easy for the user to read. Looking below that, you can see that there's a description and displays the time. This is possible using the Day Js application, an alternative to Javascript. This is built on top of Javascript to make things easier. 
 
 ## Credits
 
