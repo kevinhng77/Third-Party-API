@@ -1,7 +1,7 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
-// var hourzz= $("#hour-09")
+
 var currentDayz = $("#currentDay");
 currentDayz.text(dayjs().format('ddd,MMM D'));
 var currentHour= dayjs().format('H')
@@ -12,36 +12,10 @@ $(function () {
     localStorage.setItem(id, $(this).siblings("textarea").val())
   })
 
-  // var x =localStorage.getItem("hour-09")
-  // hourzz.children("textarea").val(x);
-
   for (let i = 09; i < 18; i++) {
     var x= localStorage.getItem(`hour-${i}`)
-    $(`hour-${i}`).children("textarea").val(x)
+    $(`#hour-${i}`).children("textarea").val(x)
   }
-
-  // let schedule = JSON.parse(localStorage.getItem('schedule'))
-  // if (schedule == null){
-  // schedule =
-  // {
-  //   hour09: '',
-  //   hour10: '',   
-  //   hour11: '',   
-  //   hour12: '',   
-  //   hour13: '',   
-  //   hour14: '',   
-  //   hour15: '',   
-  //   hour16: '',   
-  //   hour17: '',   
-  // }
-  // localStorage.setItem('schedule',JSON.stringify(schedule))
-  // }
-
-
-  // index the variable to only have the first hour of the variable
-  // if statement to color the boxes if its less than or more than the variable
-  // local storage linked to save button
-
 
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
@@ -62,10 +36,10 @@ $(function () {
 });
 
 var allDivs = $("#container-lg px-5");
-// console.log(allDivs);
-for (let i = 0; i < allDivs.length; i++){
-  console.log(allDivs[i])
-  // if statement 
-  // jquery.removeclass
-
-}
+console.log(allDivs);
+// for (let i = 0; i < allDivs.length; i++){
+//   console.log(allDivs[i])
+//   // if statement 
+//   // jquery.removeclass
+allDivs.children("id")
+// }
