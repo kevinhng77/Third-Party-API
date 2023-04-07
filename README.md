@@ -1,4 +1,4 @@
-# Code-Quiz
+# Third-Party-API
 
 ## Description 
 
