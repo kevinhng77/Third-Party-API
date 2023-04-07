@@ -1,7 +1,7 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
-
+var hourzz= $("#hour-09")
 var currentDayz = $("#currentDay");
 currentDayz.text(dayjs().format('ddd,MMM D'));
 var currentHour= dayjs().format('H')
@@ -10,11 +10,31 @@ $(function () {
   $("button").click(function(){
     var id = $(this).parent().attr('id')
     localStorage.setItem(id, $(this).siblings("textarea").val())
-    
   })
-  var cat= localStorage.getItem($(hour-12).id);
-  console.log(cat)
- 
+
+  var x =localStorage.getItem("hour-09")
+  hourzz.children("textarea").textContent= x;
+
+
+
+  // let schedule = JSON.parse(localStorage.getItem('schedule'))
+  // if (schedule == null){
+  // schedule =
+  // {
+  //   hour09: '',
+  //   hour10: '',   
+  //   hour11: '',   
+  //   hour12: '',   
+  //   hour13: '',   
+  //   hour14: '',   
+  //   hour15: '',   
+  //   hour16: '',   
+  //   hour17: '',   
+  // }
+  // localStorage.setItem('schedule',JSON.stringify(schedule))
+  // }
+
+
   // index the variable to only have the first hour of the variable
   // if statement to color the boxes if its less than or more than the variable
   // local storage linked to save button
@@ -39,5 +59,10 @@ $(function () {
 });
 
 var allDivs = $("#container-lg px-5");
-console.log(allDivs);
-// for (let i = 0; i < 5; i++)
+// console.log(allDivs);
+for (let i = 0; i < allDivs.length; i++){
+  console.log(allDivs[i])
+  // if statement 
+  // jquery.removeclass
+
+}
