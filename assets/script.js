@@ -1,7 +1,7 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
-var hourzz= $("#hour-09")
+// var hourzz= $("#hour-09")
 var currentDayz = $("#currentDay");
 currentDayz.text(dayjs().format('ddd,MMM D'));
 var currentHour= dayjs().format('H')
@@ -12,12 +12,12 @@ $(function () {
     localStorage.setItem(id, $(this).siblings("textarea").val())
   })
 
-  var x =localStorage.getItem("hour-09")
-  hourzz.children("textarea").val(x);
+  // var x =localStorage.getItem("hour-09")
+  // hourzz.children("textarea").val(x);
 
   for (let i = 09; i < 18; i++) {
-    localStorage.getItem("hour-[i]")
-
+    var x= localStorage.getItem(`hour-${i}`)
+    $(`hour-${i}`).children("textarea").val(x)
   }
 
   // let schedule = JSON.parse(localStorage.getItem('schedule'))
