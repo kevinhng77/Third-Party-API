@@ -1,99 +1,52 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# Code-Quiz
 
-## Your Task
+## Description 
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+This is a project that mainly involves Javascript but a little bit of HTML. In this assignment, there was already starter code given to us and our job is to fix it, or to add functionality that wasn't already there. This is mainly accomplished through the Javascript file, and there were many things that needed to be added in order for this to work properly. For the first part, in order for the page to look good in the beginning, you can add a big time block in the front to show what time it is. On top of that, other functions can also be added loops can be added in order to add the function of saving things in local directory. The HTML page that was already written in this assignment is already a really good page. It has everything divided into sections. The CSS page in this was also really well written, with the classes displaying different colors.
 
-You'll need to use the [Day.js](https://day.js.org/en/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
+[Finished Website](https://kevinhng77.github.io/Third-Party-API/)
+[Github Repo](https://github.com/kevinhng77/Third-Party-API)
 
-## User Story
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+## Installation
 
-## Acceptance Criteria
+First, by cloning the repository down to your computer, you can copy down the existing index.html file. Next, open it up with GitBash and type in "code ." , which should open up VSCode. From there, there were a lot of errors and things that needed to be fixed, which will be went over in the next section.
 
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+[Example 1](./assets/image1.png)
 
-The following animation demonstrates the application functionality:
+Second, by scrolling down to the bottom of the page, you can see that there is an area for you to write text in. On top of that, there is a button on the right of that with the save icon, indicating that you can save things on there. Once you press save, it will save on the page. After a refresh, you can see that it also still saves on the page. This is because of the local storage saving that occurs.
 
-<!-- @TODO: create ticket to review/update image) -->
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
+[Example 2](./assets/image2.png)
 
-## Grading Requirements
+Furthermore, if you were to notice carefully on the page, you can see that it is color coded.
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+[Example 3](./assets/image3.png)
 
-This Challenge is graded based on the following criteria:
+## Usage 
 
-### Technical Acceptance Criteria: 40%
+Looking at the top of the page, you can see that you are immediately greeted with a big "Work Day Scheduler" heading, which is really big size and easy for the user to read. Looking below that, you can see that there's a description and displays the time. This is possible using the Day Js application, an alternative to Javascript. This is built on top of Javascript to make things easier. 
 
-* Satisfies all of the above acceptance criteria plus the following:
+## Credits
 
-  * Uses a date utility library to work with date and time
+Special shoutout to TA Kyle Vance for assisting me with this project. He helped me learn the structure in which files should be presented in Github, as well as figure out some things about how variables and things work in Javascript.
 
-### Deployment: 32%
 
-* Application deployed at live URL
+## License
 
-* Application loads with no errors
+N/A
 
-* Application GitHub URL submitted
+## Badges
 
-* GitHub repo contains application code
+N/A
 
-### Application Quality: 15%
+## Features
 
-* Application user experience is intuitive and easy to navigate
+N/A
 
-* Application user interface style is clean and polished
+## Contributing
 
-* Application resembles the mock-up functionality provided in the Challenge instructions
+N/A
 
-### Repository Quality: 13%
+## Tests
 
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+N/A

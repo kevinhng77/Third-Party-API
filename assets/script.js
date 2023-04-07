@@ -41,13 +41,13 @@ $(function () {
 //     allDivs.children[i]= u;
 //   }
 
-$('#container-lg px-5').each(function () {
+$('#container-lg').each(function () {
   for (let i = 09; i < 18; i++) {
-  var a = $(this).attr('id')= i;
-  if (currentHour > a){
+  $(this).attr('id')= i;
+  if (currentHour > $(this).attr('id')){
     $(this).attr('class')='row time-block future'
   }
-  if (currentHour = a){
+  if (currentHour = $(this).attr('id')){
     $(this).attr('class')='row time-block present'
   }
   else {
@@ -59,4 +59,4 @@ $('#container-lg px-5').each(function () {
 // $('.container-lg').each(function () {
 //   var a = $(this).attr('id');
 //   console.log("a = ", a);
-// }
+// })
