@@ -5,7 +5,7 @@
 var currentDayz = $("#currentDay");
 currentDayz.text(dayjs().format('ddd,MMM D'));
 var currentHour= dayjs().format('H')
-
+console.log(currentHour)
 $(function () {
   $("button").click(function(){
     var id = $(this).parent().attr('id')
@@ -35,11 +35,23 @@ $(function () {
   // attribute of each time-block be used to do this?
 });
 
-var allDivs = $("#container-lg px-5");
-console.log(allDivs);
+// var allDivs = $("#container-lg px-5");
 // for (let i = 0; i < allDivs.length; i++){
-//   console.log(allDivs[i])
-//   // if statement 
-//   // jquery.removeclass
-allDivs.children("id")
-// }
+//   for (let u= 9; u< 18; u++){
+//     allDivs.children[i]= u;
+//   }
+
+$('#container-lg px-5').each(function () {
+  for (let i = 09; i < 18; i++) {
+  var a = $(this).attr('id')= i;
+  if (currentHour > a){
+    $(this).attr('class')='row time-block future'
+  }
+  if (currentHour = a){
+    $(this).attr('class')='row time-block present'
+  }
+  else {
+    $(this).attr('class')='row time-block past'
+  }
+  }
+})
