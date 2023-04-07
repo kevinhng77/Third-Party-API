@@ -5,7 +5,7 @@
 var currentDayz = $("#currentDay");
 currentDayz.text(dayjs().format('ddd,MMM D'));
 var currentHour= dayjs().format('H')
-console.log(currentHour)
+
 $(function () {
   $("button").click(function(){
     var id = $(this).parent().attr('id')
@@ -55,3 +55,8 @@ $('#container-lg px-5').each(function () {
   }
   }
 })
+
+// $('.container-lg').each(function () {
+//   var a = $(this).attr('id');
+//   console.log("a = ", a);
+// }
