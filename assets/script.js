@@ -13,9 +13,12 @@ $(function () {
   })
 
   var x =localStorage.getItem("hour-09")
-  hourzz.children("textarea").textContent= x;
+  hourzz.children("textarea").val(x);
 
+  for (let i = 09; i < 18; i++) {
+    localStorage.getItem("hour-[i]")
 
+  }
 
   // let schedule = JSON.parse(localStorage.getItem('schedule'))
   // if (schedule == null){
